@@ -1,26 +1,28 @@
-<p>todo works!</p>
 <div class="row">
-<div class="col-md-4" >
+<div class="col-md-4" style="display: none;" >
 @for(item of todos;track item.id){
     <p>{{item.title}}</p>
 }
 </div>
-<div class="col-md-4">
-    <div class="dropdown" id="drop1">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>     
-        
-        <ul class="dropdown-menu">
-            @for(item of todos;track item.id){            
-          <li><a class="dropdown-item" >{{item.title}}</a></li>
-            }
-        </ul>
-        
-      </div>
-</div>
-<div class="col-md-4" >
-<!-- Assuming this is part of an Angular component template -->
+
+<div class="col-md-125" >
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h2 >TO DO</h2>
+      <br>
+      <fieldset>
+        <input type="checkbox" size="20" tabindex="1"  autofocus> <label> Todo task 1</label>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" size="20" tabindex="1"  autofocus> <label> Todo task 2</label>
+      </fieldset>
+      <fieldset>
+        <input type="checkbox" size="20" tabindex="1"  autofocus> <label> Todo task 3</label>
+      </fieldset>
+    </form>
+  </div>
 
 </div>
 </div>
+<br>
+<br>
